@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)file:///C:/Users/HP/Downloads/Vasos%20locos.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio - VASOS LOCOS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF; /* Fondo blanco */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #F5F5F5; /* Fondo gris claro */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra ligera */
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            background-color: #EE2727; /* Rojo */
+            color: #FFFFFF;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .tab:hover {
+            background-color: #DE1616; /* Rojo fuerte al pasar el mouse */
+        }
+        .content {
+            padding: 20px;
+            background-color: #FFFFFF;
+            border: 1px solid #CCCCCC;
+            border-radius: 5px;
+        }
+        .hidden {
+            display: none; /* Ocultar contenido por defecto */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Página de Inicio - VASOS LOCOS</h1>
+    </div>
+    
+    <!-- Tabs -->
+    <div class="tabs">
+        <div class="tab" onclick="showTab(&#39;mision&#39;)">Misión</div>
+        <div class="tab" onclick="showTab(&#39;vision&#39;)">Visión</div>
+        <div class="tab" onclick="showTab(&#39;filosofia&#39;)">Filosofía</div>
+        <div class="tab" onclick="showTab(&#39;unión&#39;)">Union</div>
+
+    </div>
+    
+    <!-- Contenido de las pestañas -->
+    <div id="mision" class="content hidden">
+        <h2>Misión de VASOS</h2>
+        <p>Nuestra empresa esta creada para ofrecer una exelente capacitación,  para poder satisfacer las necesidades del cliente y obtener un servició rapido y excelente.</p>
+   <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mision</title>
+  <style>
+    .centrada {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
+  <img src="mision.jpg" alt="Logo" class="centrada">
+</body>
+</html>
+ </div>
+    
+    <div id="vision" class="content hidden">
+        <h2>Visión de VASOS LOCOS</h2>
+        <p>Obtener mas sucursales y lograr espandirnos a todos los países. </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vision</title>
+  <style>
+    .centrada {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
+  <img src="vision.jpg" alt="Logo" class="centrada">
+</body>
+</html>
+    </div>
+
+    <div id="filosofia" class="content">
+        <h2>Filosofia de VASOS LOCOS</h2>
+        <p>Dar un producto de exeltente calidad para poder satisfacer al cliente y tener mejores ganancias</p>
+   <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>filosofia</title>
+  <style>
+    .centrada {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
+  <img src="filosofia.jpg" alt="Logo" class="centrada">
+</body>
+</html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>filosofia</title>
+  <style>
+    .centrada {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
+  <img src="filosofia.jpg" alt="Logo" class="centrada">
+</body>
+</html>
+ </div>
+   
+    <div id="unión" class="content hidden">
+        <h2>Unión de VASOS LOCOS</h2>
+
+<li>Autenticidad y responsabilidad</li>
+<li>Retroalimentacion</li>
+<li>Confiar en el equipo</li>
+<li>Enfoque en la mejora continua</li>
+<li>Promover información</li>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>union</title>
+  <style>
+    .centrada {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
+  <img src="union.jpg" alt="Logo" class="centrada">
+</body>
+</html>
+
+    </div>
+</div>
+
+<script>
+    // Función para mostrar el contenido de las pestañas
+    function showTab(tabId) {
+        // Ocultar todos los contenidos
+        var contents = document.getElementsByClassName('content');
+        for (var i = 0; i < contents.length; i++) {
+            contents[i].classList.add('hidden');
+        }
+        // Mostrar el contenido del tab seleccionado
+        var tabContent = document.getElementById(tabId);
+        tabContent.classList.remove('hidden');
+    }
+</script>
+<a href="index.html">Regresar al Menú</a>
+
+</body></html>
