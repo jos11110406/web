@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #F5F5F5;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            background-color: #EE2727;
+            color: #FFFFFF;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .tab:hover {
+            background-color: #DE1616;
+        }
+        .content {
+            padding: 20px;
+            background-color: #FFFFFF;
+            border: 1px solid #CCCCCC;
+            border-radius: 5px;
+        }
+        .hidden {
+            display: none;
+        }
+        .centrada {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%; /* Ajusta el tamaño máximo de las imágenes */
+            height: auto; /* Mantiene la proporción original */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Empresa</h1>
+    </div>
+    
+    <!-- Tabs -->
+    <div class="tabs">
+        <div class="tab" onclick="showTab('datos')">Datos de la carpeta</div>
+    </div>
+    
+    <!-- Contenido de las pestañas -->
+    <div id="datos" class="content hidden">
+        <h2>Datos</h2>
+        <h3>Logo de la empresa</h3>
+        <img src="logo.jpg" alt="Diagrama de flujo" class="centrada">
+        <h3>Diagrama de flujo</h3>
+        <img src="diagrama.jpg" alt="Diagrama de flujo" class="centrada">
+        <h3>Organigrama empresarial</h3>
+        <img src="organigrama.jpg" alt="Organigrama empresarial" class="centrada">
+        <h3>Presentacion de integrantes</h3>
+        <img src="integrantes.jpg" alt="Presentacion de integrantes" class="centrada">
+        <h3>Grafica de grant</h3>
+        <img src="grafica.jpg" alt="Grafica de grant" class="centrada">
+    </div>
+
+    <script>
+        // Función para mostrar el contenido de las pestañas
+        function showTab(tabId) {
+            // Ocultar todos los contenidos
+            var contents = document.getElementsByClassName('content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].classList.add('hidden');
+            }
+            // Mostrar el contenido del tab seleccionado
+            var tabContent = document.getElementById(tabId);
+            tabContent.classList.remove('hidden');
+        }
+    </script>
+
+    <a href="index.html">Regresar al Menú</a>
+</div>
+
+</body>
+</html>
